@@ -1,4 +1,6 @@
 div.sidebar {
     background-color:lightgreen;
     border:red solid 2px;
+    padding:5px;
+    margin: 5px;
 }
