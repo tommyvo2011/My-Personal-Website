@@ -1,3 +1,9 @@
+body{
+    background-color: #003135;
+    color:aliceblue;
+    font-family: garamond;
+}
+
 div.sidebar {
     background-color:lightgreen;
     border:red solid 2px;
@@ -6,6 +12,53 @@ div.sidebar {
 }
 
 .profile-pic img{
+    display:flex;
+    align-items: flex-start;
     width: 250px;
     height: 250px;
+    border-radius: 10px;
+    border-width: 4px;
+    border-color: black;
+    border-style: solid;
+    
+}
+
+.profile-pic img:hover{
+    transition: 250ms ease-out;
+    border-color: #964734;
+}
+
+.card{
+    width: 35%;
+    height: 25%;
+    padding: 2%;
+    background-color: #024950;
+    display:flex;
+    align-items: center;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color:black;
+    border-style: solid;
+    gap: 10px;
+    margin: 5%
+}
+
+.card #link a:after{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.card #link a:visited{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.card #link a:active{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.card:hover{
+    transition: 250ms ease-out;
+    border-color: #964734;
 }
