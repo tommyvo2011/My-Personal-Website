@@ -4,3 +4,8 @@ div.sidebar {
     padding:5px;
     margin: 5px;
 }
+
+.profile-pic img{
+    width: 250px;
+    height: 250px;
+}
