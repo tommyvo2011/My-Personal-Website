@@ -1,64 +1,137 @@
 body{
     background-color: #003135;
-    color:aliceblue;
+    background-size: auto;
+    color: #AFDDE5;
     font-family: garamond;
 }
 
-div.sidebar {
-    background-color:lightgreen;
-    border:red solid 2px;
-    padding:5px;
-    margin: 5px;
+a, a:visited, a:hover, a:active {
+    color: inherit;
+    text-decoration: none;
 }
+
+.nav_bar{
+    transition: border 350ms;
+    position:fixed;
+    width:250px;
+    height:59rem;
+    gap:5rem;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content:center;
+    align-content: left;
+}
+
+.nav_bar:hover{
+    border-color: #024950;
+    opacity: 1;
+}
+
+.nav_link{
+    font-size: 1.4rem;
+    width: 10rem;
+}
+
+.nav_link:hover{
+    transition: font-size 350ms;
+    font-size: 1.6rem;
+}
+
+
+#contact-card{
+    /* position:fixed; */
+    width: 10rem;
+    font-size: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    padding: 1rem;
+    background-color: #024950;
+}
+
+.link {
+    font-size: 2rem;
+}
+
+.link:hover {
+    transition: font-size 150ms;
+    font-size: 3rem;
+}
+
+#introduction{
+    font-size: 3em;
+}
+
+
 
 .profile-pic img{
     display:flex;
     align-items: flex-start;
-    width: 250px;
-    height: 250px;
-    border-radius: 10px;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 150px;
     border-width: 4px;
     border-color: black;
     border-style: solid;
+}
+
+
+
+.main{
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
 }
 
-.profile-pic img:hover{
-    transition: 250ms ease-out;
-    border-color: #964734;
-}
-
-.card{
-    width: 35%;
-    height: 25%;
-    padding: 2%;
+#hook{
     background-color: #024950;
-    display:flex;
-    align-items: center;
     border-radius: 10px;
     border-width: 2px;
     border-color:black;
     border-style: solid;
+    border-radius: 10px;
+    border-width: 0.25rem;
+    width: 95rem;
+    height: 65rem;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5;
+    margin-top: 0;
+}
+
+#first-txt{
+    color: #AFDDE5;
+}
+
+#sec-txt:before{
+    background-color:#024950;
+    border-left:2px solid #964734;
+}
+
+
+
+.card{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 35rem;
+    height: 20rem;
+    padding: 2rem;
+    background-color: #024950;
+    border-radius: 10px;
+    border-width: 0.25rem;
+    border-color:black;
+    border-style: solid;
     gap: 10px;
-    margin: 5%
-}
-
-.card #link a:after{
-    color: aliceblue;
-    text-decoration: none;
-}
-
-.card #link a:visited{
-    color: aliceblue;
-    text-decoration: none;
-}
-
-.card #link a:active{
-    color: aliceblue;
-    text-decoration: none;
 }
 
 .card:hover{
     transition: 250ms ease-out;
     border-color: #964734;
+    box-shadow: black 0px 5px 15px;
 }
+
